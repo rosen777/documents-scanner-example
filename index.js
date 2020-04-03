@@ -12,11 +12,11 @@ import {Navigation} from 'react-native-navigation'
 
 import Welcome from './screens/Welcome'
 import SignIn from './screens/SignIn'
-import SignUp from './screens/SignUp'
+import ReceiptScanner from './screens/ReceiptScanner'
 
 Navigation.registerComponent('Welcome', () => Welcome)
 Navigation.registerComponent('SignIn', () => SignIn)
-Navigation.registerComponent('SignUp', () => SignUp)
+Navigation.registerComponent('ReceiptScanner', () => ReceiptScanner)
 
 Navigation.events().registerAppLaunchedListener(() => {
   // Sets the root of the application

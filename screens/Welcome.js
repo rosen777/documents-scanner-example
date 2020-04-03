@@ -1,11 +1,11 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import {
   View,
   Text,
   StyleSheet,
   Button
-} from 'react-native'
-import {Navigation} from 'react-native-navigation'
+} from 'react-native';
+import {Navigation} from 'react-native-navigation';
 
 class WelcomeScreen extends Component {
 
@@ -19,8 +19,8 @@ class WelcomeScreen extends Component {
   render() {
     return(
       <View style={styles.container}>
+        <Button title='Scan a Receipt' onPress={() => this.goToScreen('ReceiptScanner')} />
         <Button title='Sign In' onPress={() => this.goToScreen('SignIn')} />
-        <Button title='Sign Up' onPress={() => this.goToScreen('SignUp')} />
       </View>
     )
   }
